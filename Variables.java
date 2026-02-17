@@ -15,7 +15,17 @@ public class Variables{
 		System.out.print("Ingrese su altura en metros: ");
 		double altura = sc.nextDouble();
 		
-		System.out.println("Usted se llama " + nombre + ", tiene " + edad + " y mide " + altura + " metros.");
+		System.out.print("¿Está usted casado? (true/false)");
+		boolean isMarried = sc.nextBoolean();
+		
+		//Concatenación con +
+		System.out.print("Usted se llama " + nombre + ", tiene " + edad + ", mide " + altura + " metros ");
+		if (isMarried) {
+			System.out.print("y esta casado");
+		} else {
+			System.out.print("y no está casdado");
+		}
+		
 		sc.close();
 	}
 }
